@@ -1,31 +1,229 @@
-body {
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    margin: 0;
     font-family: Roboto, sans-serif;
 }
 
-.hero {
+
+
+/* 1- First section of the Landing page */
+.first-sect {
     flex: 1;
-    background-color: #1F2937;
+    display: flex;
+    flex-direction: column;
+    background-color: #1f2937;
+    padding: 0% 20%;
+
 }
 
-.information {
+/* Header section (First section of the page)*/
+div.header {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.header-logo-text {
+    font-size: 24px;
+    color: #f9faf8;
+    font-weight: bold;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    gap: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Hero section of the landing page */
+.content {
     flex: 1; 
+    display: flex;
+    justify-content: space-between;
+    gap: 36px;
+    margin: 50px 0px;
 }
 
-.quote {
+.hero {
+    flex: initial;
+    width: 450px;
+     
+}
+
+
+
+.hero-main-text {
+    font-size: 48px;
+    font-weight: 800;
+    color: #f9faf8;
+    margin-bottom: 8px;
+}
+
+.hero-secondary-text, 
+.header-link-text {
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+button {
+    font-size: 16x;
+    font-weight: bold;
+    color: #f9faf8; 
+    background-color: #3882f6;
+    padding: 8px 24px;
+    border-radius: 10px;
+    border-color: #3882f6;
+}
+
+.hero-secondary-text {
+    margin-bottom: 16px;
+}
+
+.content img {
+    width: 520px;
+    height: 300px;
+   
+}
+
+
+
+
+/* Second section of the landing page */
+
+.second-sect {
     flex: 1;
+    text-align: center;
+    padding: 36px;
 }
 
-.sign {
+.information-header-text {
+    font-size: 36px;
+    font-weight: 800;
+    color: #1f2937;
+    margin: 30px 0px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+}
+
+.info {
+    width: 150px;
+    margin-bottom: 30px;
+}
+
+.cloud-image {
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 15px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #3882f6;
+    border-radius: 25px;
+}
+
+/* Third (Quote section) section of the landing page */
+
+.third-sect {
     flex: 1;
-}
-
-.footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #1F2937;
+    background-color: #e5e7eb;
+    padding: 3% 27%;
+    
+}
+
+.square {
+    display: flex;
+    flex-direction: column;
+}
+
+.quote-text {
+    font-size: 36px; 
+    font-style: italic;
+    color: #1f2937;
+    margin-bottom: 8px;
+    padding: 0;
+}
+
+.source-quote {
+    font-weight: 800;
+    align-self: flex-end;
+}
+
+
+
+/* Fourth section of the landing page */
+.fourth-sect{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 15%
+}
+
+.blue-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; 
+    gap: 60px;
+    background-color: #3882f6;
+    color: #f9faf8;
+    padding: 36px 120px;
+    border-radius: 15px;
+    
+}
+
+.action {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+div.right button {
+    font-size: 16x;
+    font-weight: bold;
+    color: #f9faf8; 
+    background-color: #3882f6;
+    padding: 8px 24px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #f9faf8;
+    border-radius: 10px;
+}
+
+
+
+/* Footer section */
+div.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f2937;
+    color: #f9faf8;
+    padding: 30px 0px;
 }
