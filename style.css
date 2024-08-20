@@ -99,6 +99,8 @@ button {
 }
 
 .content img {
+    flex: initial;
+    display: block;
     width: 520px;
     height: 300px;
    
